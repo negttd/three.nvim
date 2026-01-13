@@ -92,7 +92,7 @@ local function set_colors()
       vim.api.nvim_set_hl(0, "TabLineDivider" .. mod .. status, {
         default = true,
         bg = get_color_fallback({ "TabLine" .. status, "bg#" }, { "TabLine", "bg#" }),
-        fg = get_color_fallback({ "TabLineFill", "bg#" }, { "Normal", "bg#" }),
+        fg = get_color_fallback({ "TabLineFill", "fg#" }, { "Normal", "fg#" }),
       })
     end
   end
